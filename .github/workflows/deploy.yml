@@ -1,0 +1,16 @@
+name: Deploy to Hugging Face Spaces
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Deploy
+        run: |
+          huggingface-cli login --token ${{ secrets.HF_TOKEN }}
+          huggingface-cli repo create genai-agentlab --type=space --sdk=docker
+          huggingface-cli repo upload --repo-type=space genai-agentlab ./

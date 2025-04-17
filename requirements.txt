@@ -1,0 +1,13 @@
+streamlit
+langchain
+sentence-transformers
+faiss-cpu
+PyMuPDF
+chromadb
+pinecone-client
+transformers
+docker
+fastapi
+uvicorn
+wandb
+faker
