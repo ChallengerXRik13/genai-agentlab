@@ -8,4 +8,4 @@
 
 ...
 
-MIT License © [Your Name]
+Made with ❤️ by Simanta Mukhopadhyay
